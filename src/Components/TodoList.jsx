@@ -3,8 +3,11 @@ import './TodoList.css';
 
 const TodoList = () => {
   
-
-  return (
+    const [todos, setTodos] = useState([]);
+    const [headingInput, setHeadingInput] = useState('');
+    const [listInputs, setListInputs] = useState({});
+ 
+    return (
     <>
       <div className="todo-container">
         <h1 className="title">My Todo List</h1>
